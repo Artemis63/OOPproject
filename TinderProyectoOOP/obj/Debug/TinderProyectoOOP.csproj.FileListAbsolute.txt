@@ -1,0 +1,28 @@
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\bin\Debug\TinderProyectoOOP.exe.config
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\bin\Debug\TinderProyectoOOP.exe
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\bin\Debug\TinderProyectoOOP.pdb
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.csprojResolveAssemblyReference.cache
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\MainWindow.g.cs
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\App.g.cs
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP_MarkupCompile.cache
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP_MarkupCompile.lref
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\MainWindow.baml
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.g.resources
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.Properties.Resources.resources
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.csproj.GenerateResource.Cache
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.exe
+c:\users\brenda\documents\visual studio 2015\Projects\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.pdb
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\bin\Debug\TinderProyectoOOP.exe.config
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.exe
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.pdb
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\bin\Debug\TinderProyectoOOP.exe
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\bin\Debug\TinderProyectoOOP.pdb
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.csprojResolveAssemblyReference.cache
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\MainWindow.g.cs
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\App.g.cs
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP_MarkupCompile.cache
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP_MarkupCompile.lref
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\MainWindow.baml
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.g.resources
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.Properties.Resources.resources
+C:\Users\Programmer\Downloads\TinderProyectoOOP (1)\TinderProyectoOOP\TinderProyectoOOP\obj\Debug\TinderProyectoOOP.csproj.GenerateResource.Cache

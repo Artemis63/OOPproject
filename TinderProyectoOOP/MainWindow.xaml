@@ -1,0 +1,165 @@
+﻿<Window x:Name="Tinder" x:Class="TinderProyectoOOP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TinderProyectoOOP"
+        mc:Ignorable="d"
+        Title="Tinder" Height="625" Width="333" Closing="Tinder_Closing" Loaded="Tinder_Loaded">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="23" Margin="0,0,-2,0" VerticalAlignment="Top" Width="327">
+            <Label x:Name="time" Content="00:00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Canvas.Left="136" Canvas.Top="-4" Width="70"/>
+            <Ellipse Fill="Black" HorizontalAlignment="Left" Height="8" Stroke="Black" VerticalAlignment="Top" Width="8" Canvas.Left="3" Canvas.Top="7"/>
+            <Ellipse Fill="Black" HorizontalAlignment="Left" Height="8" Stroke="Black" VerticalAlignment="Top" Width="8" Canvas.Left="12" Canvas.Top="7" RenderTransformOrigin="2.167,0.367"/>
+            <Ellipse Fill="Black" HorizontalAlignment="Left" Height="8" Stroke="Black" VerticalAlignment="Top" Width="8" Canvas.Left="21" Canvas.Top="7" RenderTransformOrigin="2.167,0.367"/>
+            <Ellipse Fill="Black" HorizontalAlignment="Left" Height="8" Stroke="Black" VerticalAlignment="Top" Width="8" Canvas.Left="30" Canvas.Top="7" RenderTransformOrigin="2.167,0.367"/>
+            <Ellipse Fill="White" HorizontalAlignment="Left" Height="8" Stroke="Black" VerticalAlignment="Top" Width="8" Canvas.Left="39" Canvas.Top="7" RenderTransformOrigin="2.167,0.367"/>
+            <Label x:Name="carrierlbl" Content="TELCEL" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Canvas.Left="44" Canvas.Top="-3"/>
+            <Label x:Name="wifilbl" Content="4G" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Canvas.Left="86" Canvas.Top="-3" Width="38"/>
+            <Rectangle Fill="#FF00CC00" HorizontalAlignment="Left" Height="13" Stroke="Black" VerticalAlignment="Top" Width="30" Canvas.Left="273" Canvas.Top="3"/>
+            <Rectangle Fill="Black" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="3" Canvas.Left="303" Canvas.Top="5"/>
+        </Canvas>
+
+        <Canvas x:Name="IntroPages" HorizontalAlignment="Left" Height="279" Margin="2,59,0,0" VerticalAlignment="Top" Width="313">
+            <Image x:Name="page2" HorizontalAlignment="Left" Height="394" VerticalAlignment="Top" Width="312" Source="page2.jpg" Canvas.Left="3">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="page2.jpg"/>
+                </Image.OpacityMask>
+            </Image>
+            <Image x:Name="page3" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="323" Canvas.Left="3" Canvas.Top="1" Source="page3.jpg"/>
+            <Image x:Name="page4" HorizontalAlignment="Left" Height="412" VerticalAlignment="Top" Width="302" Canvas.Left="11" Source="page4.jpg" Canvas.Top="2"/>
+            <Image x:Name="page1" HorizontalAlignment="Left" Height="523" VerticalAlignment="Top" Width="311" Source="page1.jpg" Canvas.Left="13" Canvas.Top="2"/>
+        </Canvas>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="254" Margin="0,455,-1,-115" VerticalAlignment="Top" Width="326" Source="login.jpg"/>
+
+        <Button x:Name="Login" HorizontalAlignment="Left" Margin="146,384,0,0" VerticalAlignment="Top" Width="35" Height="202" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="Login_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF357CBA" Offset="1"/>
+                    <GradientStop Color="#FF394496"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="loglbl" Content="LOGIN" HorizontalAlignment="Left" Margin="124,464,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="rightbtn" Content="--&gt;" HorizontalAlignment="Left" Margin="272,249,0,0" VerticalAlignment="Top" Width="52" Height="40" Click="rightbtn_Click" Background="{x:Null}" BorderBrush="#FFDD5235"/>
+        <Button x:Name="leftbtn" Content="&lt;--" HorizontalAlignment="Left" Margin="4,249,0,0" VerticalAlignment="Top" Width="52" Height="40" Click="leftbtn_Click" Background="{x:Null}" BorderBrush="#FFDD5235"/>
+        <Image x:Name="logo" Height="43" Margin="108,19,0,0" VerticalAlignment="Top" Source="logo.png" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="109">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="logo.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Canvas x:Name="loginCanvas" HorizontalAlignment="Left" Height="341" Margin="0,113,-2,0" VerticalAlignment="Top" Width="327" RenderTransformOrigin="-0.07,0.225" Background="White">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.132"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <TextBox x:Name="userlognametxt" Height="37" Canvas.Left="77" TextWrapping="Wrap" Canvas.Top="70" Width="181" Foreground="#FFDD5235" BorderBrush="#FFDD5235" FontSize="16"/>
+            <Label x:Name="user" Content="USERNAME" Canvas.Left="102" Canvas.Top="31" RenderTransformOrigin="0.042,-0.586" FontSize="22"/>
+            <Label x:Name="pass" Content="PASSWORD" Canvas.Left="102" Canvas.Top="133" RenderTransformOrigin="0.042,-0.586" FontSize="22"/>
+            <PasswordBox x:Name="loginpasswordBox" Canvas.Left="74" Canvas.Top="176" Height="37" Width="181" BorderBrush="#FFDD5235" FontSize="16"/>
+            <Button x:Name="createAcc" Content="Create an Account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Canvas.Left="164" Canvas.Top="308" Background="White" Height="30" BorderBrush="{x:Null}" Click="createAcc_Click"/>
+            <Label x:Name="dontlbl" Content="Don't Have An Account?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Canvas.Left="35" Canvas.Top="309"/>
+        </Canvas>
+        <Canvas x:Name="AddCanva" HorizontalAlignment="Left" Height="577" Margin="0,21,0,0" VerticalAlignment="Top" Width="334">
+            <Canvas.Background>
+                <ImageBrush ImageSource="addaccwall.jpg"/>
+            </Canvas.Background>
+            <Image x:Name="image1" Height="108" Canvas.Left="29" Canvas.Top="26" Width="280" Source="tinder-logo.png">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="tinder-logo.png"/>
+                </Image.OpacityMask>
+            </Image>
+            <TextBox x:Name="nametxt" Height="30" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="158" Width="156" BorderBrush="White" FontSize="18"/>
+            <TextBox x:Name="usernametxt" Height="30" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="244" Width="156" BorderBrush="White" FontSize="18"/>
+            <TextBox x:Name="emailtxt" Height="30" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="340" Width="156" BorderBrush="White" FontSize="18"/>
+            <Label x:Name="namelbl" Content="NAME" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Canvas.Left="34" Canvas.Top="157" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="birthlbl" Content="BIRTHDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Canvas.Left="34" Canvas.Top="199" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <DatePicker x:Name="birthdp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="152" Canvas.Left="150" Canvas.Top="201" FontSize="18"/>
+            <Label x:Name="userlbl" Content="USERNAME" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Canvas.Left="34" Canvas.Top="243" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <PasswordBox x:Name="passwordbx" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Canvas.Left="149" Canvas.Top="291" Height="29" FontSize="16"/>
+            <Label x:Name="passlbl" Content="PASSWORD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Canvas.Left="34" Canvas.Top="291" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="emailbl" Content="E-MAIL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Canvas.Left="34" Canvas.Top="337" FontSize="18" FontWeight="Bold" Foreground="White"/>
+            <Button x:Name="signup" Content="SignUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" FontSize="48" FontWeight="Bold" Foreground="#FFFF7E21" Background="White" BorderBrush="White" Canvas.Left="76" Canvas.Top="425" Height="69" Click="signup_Click"/>
+        </Canvas>
+        <Canvas x:Name="editInfoCanvas" Height="663" VerticalAlignment="Top" Background="White" Width="326" Margin="0,18,-1,-87">
+            <Label x:Name="label" Content="Edit Info" Canvas.Left="120" Canvas.Top="-1" Height="33" Width="92" FontSize="20" FontWeight="Bold"/>
+            <Button x:Name="doneBtn" Content="Done" Canvas.Left="254" Canvas.Top="5" Width="74" FontSize="18" FontWeight="Bold" Foreground="#FFFF4A36" Background="{x:Null}" BorderBrush="{x:Null}" Click="doneBtn_Click"/>
+            <Rectangle Fill="#FFF0F0F0" Height="663" Stroke="#FFF0F0F0" Canvas.Top="39" Width="343" Canvas.Left="-3"/>
+            <Rectangle x:Name="pic1" Height="161" Canvas.Left="27" Stroke="#FFE4DEDE" Canvas.Top="57" Width="172" Fill="#FFE4DEDE"/>
+            <Rectangle x:Name="pic2" Height="74" Canvas.Left="210" Stroke="#FFD8D2D2" Canvas.Top="59" Width="80" Fill="#FFE4DEDE"/>
+            <Rectangle x:Name="pic3" Height="74" Canvas.Left="210" Stroke="#FFD8D2D2" Canvas.Top="140" Width="80" Fill="#FFE4DEDE"/>
+            <Rectangle x:Name="pic4" Height="74" Canvas.Left="210" Stroke="#FFD8D2D2" Canvas.Top="224" Width="80" Fill="#FFE4DEDE"/>
+            <Rectangle x:Name="pic5" Height="74" Canvas.Left="118" Stroke="#FFD8D2D2" Canvas.Top="226" Width="80" Fill="#FFE4DEDE"/>
+            <Rectangle x:Name="pic6" Height="74" Canvas.Left="28" Stroke="#FFD8D2D2" Canvas.Top="226" Width="80" Fill="#FFE4DEDE"/>
+            <Button x:Name="pic1btn" Content="+" Canvas.Left="169" Canvas.Top="186" Width="27" Background="#FFFF4A36" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Height="29" RenderTransformOrigin="0.5,0.5" Click="pic1btn_Click"/>
+            <Button x:Name="pic2btn" Content="+" Canvas.Left="261" Canvas.Top="103" Width="27" Background="#FFFF4A36" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Height="29" RenderTransformOrigin="0.481,0.458"/>
+            <Button x:Name="pic3btn" Content="+" Canvas.Left="261" Canvas.Top="182" Width="27" Background="#FFFF4A36" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Height="29" RenderTransformOrigin="0.481,0.458"/>
+            <Button x:Name="pic4btn" Content="+" Canvas.Left="261" Canvas.Top="266" Width="27" Background="#FFFF4A36" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Height="29" RenderTransformOrigin="0.481,0.458"/>
+            <Button x:Name="pic5btn" Content="+" Canvas.Left="168" Canvas.Top="268" Width="27" Background="#FFFF4A36" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Height="29" RenderTransformOrigin="0.481,0.458"/>
+            <Button x:Name="pic6btn" Content="+" Canvas.Left="77" Canvas.Top="268" Width="27" Background="#FFFF4A36" Foreground="White" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" Height="29" RenderTransformOrigin="0.481,0.458"/>
+            <Label x:Name="aboutlbl" Content="About" Canvas.Left="26" Canvas.Top="305" Width="66" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="abouttxt" Height="41" Canvas.Left="28" TextWrapping="Wrap" Canvas.Top="332" Width="264"/>
+            <Label x:Name="worklbl" Content="Current Work" Canvas.Left="28" Canvas.Top="373" Width="115" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="worktxt" Height="23" Canvas.Left="28" TextWrapping="Wrap" Canvas.Top="401" Width="264"/>
+            <Label x:Name="schoollbl" Content="School" Canvas.Left="28" Canvas.Top="420" Width="115" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="schooltxt" Height="23" Canvas.Left="28" TextWrapping="Wrap" Canvas.Top="451" Width="264"/>
+            <Label x:Name="anthemlbl" Content="My Anthem" Canvas.Left="28" Canvas.Top="474" Width="115" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="anthemtxt" Height="23" Canvas.Left="28" TextWrapping="Wrap" Canvas.Top="505" Width="264"/>
+            <Label x:Name="genrelbl" Content="I Am" Canvas.Left="28" Canvas.Top="526" Width="115" FontWeight="Bold" FontSize="16"/>
+            <ComboBox x:Name="genrecombx" Canvas.Left="170" Canvas.Top="535" Width="120">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+                <ComboBoxItem Content="Man" HorizontalAlignment="Left" Width="118"/>
+                <ComboBoxItem Content="Woman" HorizontalAlignment="Left" Width="118"/>
+            </ComboBox>
+            <Image x:Name="image2" Height="155" Canvas.Left="27" Canvas.Top="59" Width="173"/>
+        </Canvas>
+        <Canvas x:Name="profileMain" HorizontalAlignment="Left" Height="581" Margin="0,19,0,-6" VerticalAlignment="Top" Width="325" Background="White">
+            <Image x:Name="image3" Height="32" Canvas.Left="145" Width="30" Source="profile.jpg" Canvas.Top="4"/>
+            <Image x:Name="image4" Height="50" Canvas.Left="280" Canvas.Top="-4" Width="44" Source="tinderflame.png"/>
+            <Rectangle x:Name="pic1_Copy" Height="197" Canvas.Left="65" Stroke="#FFE4DEDE" Canvas.Top="70" Width="208" Fill="#FFE4DEDE"/>
+            <Label x:Name="nombreedadUSERtxt" Content="NOMBRE Y EDAD" Canvas.Left="67" Canvas.Top="272" FontSize="24" FontWeight="Bold"/>
+            <Image x:Name="image5" Height="88" Canvas.Left="16" Canvas.Top="316" Width="112" Source="settings.png"/>
+            <Image x:Name="image5_Copy" Height="74" Canvas.Left="205" Canvas.Top="318" Width="92" Source="edit.png"/>
+            <Button x:Name="settingsbtn" Content="Settings" Canvas.Left="37" Canvas.Top="395" Width="75" FontSize="16" FontWeight="Bold" Height="35"/>
+            <Button x:Name="editInfobtn" Content="Edit Info" Canvas.Left="208" Canvas.Top="395" Width="75" FontSize="16" FontWeight="Bold" Height="35" Click="editInfobtn_Click"/>
+            <Button x:Name="tinderPlay" Content="" Canvas.Left="282" Width="41" Background="{x:Null}" Height="44" Click="tinderPlay_Click" RenderTransformOrigin="0.626,1.285" Canvas.Top="4"/>
+        </Canvas>
+        <Canvas x:Name="tinderPlaycanvas" HorizontalAlignment="Left" Height="571" Margin="-2,24,0,-1" VerticalAlignment="Top" Width="323" Background="White">
+            <Image x:Name="image4_Copy" Height="56" Canvas.Left="139" Canvas.Top="-3" Width="54" Source="tinderflame.png"/>
+            <Rectangle x:Name="picMate" Height="416" Canvas.Left="17" Stroke="#FFE4DEDE" Canvas.Top="59" Width="290" Fill="#FFE4DEDE"/>
+            <Label x:Name="userMate" Content="NOMBRE Y EDAD" Canvas.Left="18" Canvas.Top="400" FontSize="24" FontWeight="Bold"/>
+            <Label x:Name="userMateschool" Content="school" Canvas.Left="19" Canvas.Top="441" FontSize="18"/>
+            <Button x:Name="swipeLeft" Content="X" Canvas.Left="21" Canvas.Top="472" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB5B5B" FontWeight="Bold" FontSize="48" FontFamily="Comic Sans MS"/>
+            <Button x:Name="swipeRight" Canvas.Left="221" Canvas.Top="470" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB5B5B" FontWeight="Bold" FontSize="48" FontFamily="Comic Sans MS" Height="75">
+                <Image x:Name="image4_Copy2" Height="62" Width="60" Source="128154.png" RenderTransformOrigin="0.517,0.653"/>
+            </Button>
+            <Button x:Name="swipeRight_Copy" Canvas.Left="125" Canvas.Top="479" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB5B5B" FontWeight="Bold" FontSize="48" FontFamily="Comic Sans MS">
+                <Image x:Name="image4_Copy3" Height="62" Width="60" Source="super.png" RenderTransformOrigin="0.517,0.653"/>
+            </Button>
+            <Button x:Name="settingsbtn1" Canvas.Left="12" Canvas.Top="7" Width="53" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="38">
+                <Image x:Name="image3_Copy" Height="32" Width="30" Source="profile.jpg"/>
+            </Button>
+            <Button x:Name="button" Canvas.Left="265" Width="55" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="46" Canvas.Top="2">
+                <Image x:Name="image4_Copy1" Height="50" Width="44" Source="message.png"/>
+            </Button>
+        </Canvas>
+
+    </Grid>
+</Window>
